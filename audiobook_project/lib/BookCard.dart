@@ -27,6 +27,20 @@ class BookCard extends StatelessWidget {
                     "assets/$cover",
                   )),
                 ),
+                Opacity(
+                  opacity: 0.5,
+                  child: Text(
+                    "Harper Lee",
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Text("To Kill a Mocking Bird",
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                    )),
               ],
             ),
           ),
@@ -38,17 +52,3 @@ class BookCard extends StatelessWidget {
     );
   }
 }
-// Opacity(
-//                   opacity: 0.5,
-//                   child: Text(
-//                     "Harper Lee",
-//                     overflow: TextOverflow.ellipsis,
-//                     textAlign: TextAlign.left,
-//                   ),
-//                 ),
-//                 Text("To Kill a Mocking Bird",
-//                     overflow: TextOverflow.ellipsis,
-//                     textAlign: TextAlign.left,
-//                     style: TextStyle(
-//                       fontWeight: FontWeight.w500,
-//                     )),
