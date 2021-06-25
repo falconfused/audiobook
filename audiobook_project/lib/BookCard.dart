@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class BookCard extends StatelessWidget {
   final String cover;
-
-  BookCard({
-    required this.cover,
-  });
+  final String authorname;
+  final String bookname;
+  BookCard(
+      {required this.cover, required this.authorname, required this.bookname});
   @override
   Widget build(BuildContext context) {
     return Container(
