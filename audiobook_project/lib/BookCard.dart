@@ -9,45 +9,47 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
-      width: 120,
-      child: Column(
-        children: [
-          FlatButton(
-            color: Colors.white,
-            padding: EdgeInsets.all(0),
-            onPressed: () {},
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image(
-                      image: AssetImage(
-                    "assets/$cover",
-                  )),
+      height: 300,
+      width: 150,
+      child: FlatButton(
+        color: Colors.white,
+        padding: EdgeInsets.all(0),
+        onPressed: () {},
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Card(
+              elevation: 9,
+              shadowColor: Colors.white,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  "assets/$cover",
+                  height: 220,
+                  semanticLabel: "asgegweg",
+                  width: 150,
                 ),
-                Opacity(
-                  opacity: 0.5,
-                  child: Text(
-                    "Harper Lee",
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Text("To Kill a Mocking Bird",
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                    )),
-              ],
+              ),
             ),
-          ),
-          SizedBox(
-            height: 5,
-          ),
-        ],
+            SizedBox(
+              height: 10,
+            ),
+            Opacity(
+              opacity: 0.5,
+              child: Text(
+                "Harper Lee",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.left,
+              ),
+            ),
+            Text("To Kill a Mocking Bird sfghwsgsg",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                )),
+          ],
+        ),
       ),
     );
   }
