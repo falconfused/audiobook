@@ -76,12 +76,12 @@ class _StartingPageState extends State<StartingPage> {
           focusColor: Colors.red,
           hoverColor: Colors.red,
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(50),
-            borderSide: BorderSide(width: 0.01),
+            borderRadius: BorderRadius.circular(40),
+            borderSide: BorderSide(width: 0.25),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(50),
-            borderSide: BorderSide(width: 0.01),
+            borderRadius: BorderRadius.circular(40),
+            borderSide: BorderSide(width: 0.25),
           ),
           hintText: 'Search Bar',
           prefixIcon: Icon(Icons.search),
@@ -93,10 +93,10 @@ class _StartingPageState extends State<StartingPage> {
 //Building a TabBar
   TabBar buildTabBar() {
     return TabBar(
-      indicatorColor: Color(0xFF687FF9),
-      indicatorPadding: EdgeInsets.all(25).copyWith(top: 0, bottom: 0),
-      unselectedLabelColor: Colors.black,
-      labelColor: Color(0xFF687FF9),
+      indicatorColor: Color(0xFF2979ff),
+      indicatorPadding: EdgeInsets.all(40).copyWith(top: 0, bottom: 0),
+      unselectedLabelColor: Colors.blueGrey,
+      labelColor: Color(0xFF2979ff),
       tabs: [
         Tab(text: 'BOOKS'),
         Tab(text: 'AUDIO'),
@@ -131,8 +131,8 @@ class _StartingPageState extends State<StartingPage> {
       ],
       currentIndex: _selectedIndex,
       // selectedItemColor: Color(0xFF687FF9),
-      selectedItemColor: Color(0xFF687FF9),
-      unselectedItemColor: Colors.grey,
+      selectedItemColor: Color(0xFF2979ff),
+      unselectedItemColor: Colors.blueGrey,
       onTap: _onItemTapped, showUnselectedLabels: true,
     );
   }

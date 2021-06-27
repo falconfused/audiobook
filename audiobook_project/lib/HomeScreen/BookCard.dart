@@ -12,19 +12,20 @@ class BookCard extends StatelessWidget {
       height: 300,
       width: 150,
       child: FlatButton(
-        color: Colors.white,
+        color: Colors.grey[100],
         padding: EdgeInsets.all(0),
         onPressed: () {},
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Card(
               elevation: 9,
-              shadowColor: Colors.white,
+              shadowColor: Colors.grey,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
+                // borderRadius: BorderRadius.circular(1),
                 child: Image.asset(
                   "assets/$cover",
+                  fit: BoxFit.cover,
                   height: 220,
                   semanticLabel: "asgegweg",
                   width: 150,
@@ -36,15 +37,12 @@ class BookCard extends StatelessWidget {
             ),
             Opacity(
               opacity: 0.5,
-              child: Text(
-                "Harper Lee",
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.left,
-              ),
+              child: Text("$authorname",
+                  overflow: TextOverflow.ellipsis, textAlign: TextAlign.center),
             ),
-            Text("To Kill a Mocking Bird sfghwsgsg",
+            Text("$bookname",
                 overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.left,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                 )),
