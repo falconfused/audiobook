@@ -27,7 +27,6 @@ class BookCard extends StatelessWidget {
                   "assets/$cover",
                   fit: BoxFit.cover,
                   height: 220,
-                  semanticLabel: "asgegweg",
                   width: 150,
                 ),
               ),
